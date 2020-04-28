@@ -13,7 +13,7 @@ module.exports = class extends Event {
 		if (msg.guild.me.hasPermission('VIEW_AUDIT_LOG')) {
 			const auditLog = await msg.guild.fetchAuditLogs();
 			const logEntry = await auditLog.entries.first();
-			const { executor, target } = logEntry;
+			const { executor } = logEntry;
 
 
 			if (logEntry.action === 'MESSAGE_PIN' && msg.pinned) this.client.emit('messagePin', msg, executor);

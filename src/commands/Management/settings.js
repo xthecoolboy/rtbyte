@@ -4,7 +4,6 @@ const { MessageEmbed } = require('discord.js');
 const moment = require('moment-timezone');
 
 const rolesArr = ['admin', 'mod', 'muted', 'vcbanned', 'joinable'];
-const inviteRegex = /^(discord.gg)\/.+[a-z]/g;
 
 module.exports = class extends Command {
 
