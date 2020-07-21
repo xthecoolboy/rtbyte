@@ -12,7 +12,7 @@
         "pm2:delete": "pm2 delete rtbyte",
         "start": "node src/app.js",
         "lint": "eslint --ext js src --fix",
-        "test": "eslint --ext js src"
+        "start": "node src/index.js"
     },
     "repository": {
         "type": "git",
